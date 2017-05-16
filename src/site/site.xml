@@ -30,7 +30,7 @@
             <protocolRelativeURLs>true</protocolRelativeURLs>
 
             <!-- Comment this out for local development. -->
-            <absoluteResourceURL>https://tyrus.java.net</absoluteResourceURL>
+            <absoluteResourceURL>https://tyrus-project.github.io</absoluteResourceURL>
 
             <!-- Brand on the top menu bar -->
             <brand>
@@ -70,7 +70,7 @@
             <skinAttribution>false</skinAttribution>
             <bottomDescription quote="false">
                 <![CDATA[
-                   <a href="https://glassfish.java.net" style="border:0; display:block"><img src="images/glassfish_logo.png" width="200" /></a>
+                   <a href="https://glassfish.github.io" style="border:0; display:block"><img src="images/glassfish_logo.png" width="200" /></a>
                 ]]>
             </bottomDescription>
 
@@ -144,8 +144,8 @@
                 <item name="Proprietary configuration" href="documentation/${latestVersion}/index/tyrus-proprietary-config.html"/>
             </item>
             <item name="User Guide - Tyrus 1.0" href="documentation/1.0/user-guide.html"/>
-            <item name="Tyrus ${latestVersion} Javadocs" href="https://tyrus.java.net/apidocs/${latestVersion}/index.html" />
-            <item name="WebSocket API 1.1 Javadocs" href="https://tyrus.java.net/apidocs-javax.websocket/1.1/index.html" />
+            <item name="Tyrus ${latestVersion} Javadocs" href="https://tyrus-project.github.io/apidocs/${latestVersion}/index.html" />
+            <item name="WebSocket API 1.1 Javadocs" href="https://tyrus-project.github.io/apidocs-javax.websocket/1.1/index.html" />
             <item name="Contribute" href="contribute.html"/>
         </menu>
         <menu name="Contribute">
@@ -155,7 +155,7 @@
         </menu>
         <menu name="Project Info">
             <item name="Source Control" href="scm.html"/>
-            <item name="Issue Tracking" href="https://java.net/jira/browse/TYRUS/"/>
+            <item name="Issue Tracking" href="https://github.com/tyrus-project/tyrus/issues"/>
             <item name="Mailing Lists" href="mailing.html"/>
             <item name="Project Team" href="team-list.html"/>
         </menu>

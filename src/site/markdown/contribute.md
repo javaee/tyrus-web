@@ -42,7 +42,7 @@ Have insight on an issue another is having?  Speak up!  Join our [mailing
 lists][list] or follow questions tagged with `tyrus` on [StackOverflow][stack].
 
 
-[tyrus-jira]: https://java.net/jira/browse/TYRUS
+[tyrus-jira]: https://github.com/tyrus-project/tyrus/issues
 [git]: images/git.png
 [bug]: images/bug.png
 [pen]: images/pen.png
