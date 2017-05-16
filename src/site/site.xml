@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Project Tyrus"
+         xmlns="http://maven.apache.org/DECORATION/1.3.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
+
+    <!-- Grizzly logo banner on all pages -->
+    <bannerLeft>
+        <!-- Reflow Maven Skin, but with "Reflow" highlighted -->
+        <!-- <img src="images/websocket_logo.png" width="75" /> -->
+        <name><![CDATA[
+          Project <span class="color-highlight">Tyrus</span>
+          ]]>
+        </name>
+        <href>index.html</href>
+    </bannerLeft>
+    <version position="none" />
+    <publishDate position="none" />
+    <skin>
+        <groupId>lt.velykis.maven.skins</groupId>
+        <artifactId>reflow-maven-skin</artifactId>
+        <version>1.0.0</version>
+    </skin>
+
+    <custom>
+        <reflowSkin>
+            <!-- =============== Global skin configuration ================= -->
+
+            <!-- Make this to 'false' for local development, i.e. file:// URLs -->
+            <protocolRelativeURLs>true</protocolRelativeURLs>
+
+            <!-- Comment this out for local development. -->
+            <absoluteResourceURL>https://tyrus.java.net</absoluteResourceURL>
+
+            <!-- Brand on the top menu bar -->
+            <brand>
+                <name>
+                    <![CDATA[<img src="images/websocket_logo_white.png" style="width:35px; margin-right:10px;" /> Project <span class="color-highlight">Tyrus</span>]]>
+                </name>
+                <href>index.html</href>
+            </brand>
+
+            <!-- Slogan appears under the Tyrus Head logo -->
+            <slogan>JSR 356: Java API for WebSocket - Reference Implementation</slogan>
+
+            <!-- Syntax highlighting Configuration -->
+            <highlightJs>true</highlightJs>
+            <highlightJsTheme>solarized_dark</highlightJsTheme>
+
+            <!-- Skin theme -->
+            <theme>bootswatch-cosmo</theme>
+
+            <!-- Top navbar configuration -->
+            <topNav>Documentation</topNav>
+
+            <!-- Bottom nav configuration -->
+            <bottomNav maxSpan="9">
+                <column>Main|Download</column>
+                <column>Contribute</column>
+                <column>Project Info</column>
+            </bottomNav>
+
+            <!-- Table of Contents - displayed on all pages unless explicitly
+                 disabled on a per-page basis. -->
+            <toc>top</toc>
+            <tocTopMax>4</tocTopMax>
+
+            <!-- Misc Configuration -->
+            <smoothScroll>true</smoothScroll>
+            <skinAttribution>false</skinAttribution>
+            <bottomDescription quote="false">
+                <![CDATA[
+                   <a href="https://glassfish.java.net" style="border:0; display:block"><img src="images/glassfish_logo.png" width="200" /></a>
+                ]]>
+            </bottomDescription>
+
+            <!-- Per-Page Configuration (allows overriding of global) -->
+            <pages>
+                <!-- index.html -->
+                <index project="site">
+                    <sections>
+                        <columns>2</columns>
+                        <columns>3</columns>
+                    </sections>
+                    <toc>true</toc>
+                    <titleTemplate>Project Tyrus</titleTemplate>
+                </index>
+
+                <!-- contribute.html -->
+                <contribute>
+                    <sections>
+                        <body/>
+                        <columns>3</columns>
+                    </sections>
+                    <toc>false</toc>
+                </contribute>
+
+                <!-- mailing.html -->
+                <mailing>
+                    <toc>false</toc>
+                </mailing>
+
+                <!-- documentation.html -->
+                <documentation>
+                    <toc>false</toc>
+                </documentation>
+
+                <!-- related.html -->
+                <related>
+                    <toc>false</toc>
+                </related>
+
+                <!-- dependencies.html -->
+                <dependencies>
+                    <toc>false</toc>
+                </dependencies>
+
+                <!-- scm.html -->
+                <scm>
+                    <toc>false</toc>
+                </scm>
+            </pages>
+        </reflowSkin>
+    </custom>
+
+    <body>
+        <menu name="Main">
+            <item name="Home" href="index.html"/>
+            <item name="License" href="license.html"/>
+        </menu>
+        <menu name="Download">
+            <item name="Download" href="dependencies.html"/>
+        </menu>
+        <menu name="Documentation">
+            <item name="User Guide - One Page" href="documentation/${latestVersion}/user-guide.html"/>
+            <item name="User Guide" href="documentation/${latestVersion}/index/index.html" collapse="true">
+                <item name="Getting Started" href="documentation/${latestVersion}/index/getting-started.html"/>
+                <item name="Modules and Dependencies" href="documentation/${latestVersion}/index/modules-and-dependencies.html"/>
+                <item name="Deploying WebSocket Endpoints" href="documentation/${latestVersion}/index/deployment.html"/>
+                <item name="WebSocket API" href="documentation/${latestVersion}/index/websocket-api.html"/>
+                <item name="Configurations" href="documentation/${latestVersion}/index/configurations.html"/>
+                <item name="Endpoint Lifecycle, Sessions, Sending Messages" href="documentation/${latestVersion}/index/lifecycle.html"/>
+                <item name="Injection Support" href="documentation/${latestVersion}/index/injection.html"/>
+                <item name="Proprietary configuration" href="documentation/${latestVersion}/index/tyrus-proprietary-config.html"/>
+            </item>
+            <item name="User Guide - Tyrus 1.0" href="documentation/1.0/user-guide.html"/>
+            <item name="Tyrus ${latestVersion} Javadocs" href="https://tyrus.java.net/apidocs/${latestVersion}/index.html" />
+            <item name="WebSocket API 1.1 Javadocs" href="https://tyrus.java.net/apidocs-javax.websocket/1.1/index.html" />
+            <item name="Contribute" href="contribute.html"/>
+        </menu>
+        <menu name="Contribute">
+            <item name="Contribute" href="contribute.html"/>
+            <item name="StackOverflow" href="http://stackoverflow.com/questions/tagged/tyrus"/>
+            <item name="Mailing Lists" href="mailing.html"/>
+        </menu>
+        <menu name="Project Info">
+            <item name="Source Control" href="scm.html"/>
+            <item name="Issue Tracking" href="https://java.net/jira/browse/TYRUS/"/>
+            <item name="Mailing Lists" href="mailing.html"/>
+            <item name="Project Team" href="team-list.html"/>
+        </menu>
+    </body>
+
+    <googleAnalyticsAccountId>UA-41373632-1</googleAnalyticsAccountId>
+</project>
